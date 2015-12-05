@@ -1,0 +1,25 @@
+<ion-navbar secondary *navbar>
+    <ion-title>
+        Sign In
+    </ion-title>
+</ion-navbar>
+
+<ion-content>
+
+    <ion-list>
+
+        <ion-input floating-label>
+            <ion-label>Username</ion-label>
+            <input type="text" value="" [(ng-model)]="username">
+        </ion-input>
+
+        <ion-input floating-label>
+            <ion-label>Password</ion-label>
+            <input type="password" value="" [(ng-model)]="password">
+        </ion-input>
+
+    </ion-list>
+
+    <button secondary (click)="loginEmail()" style="width:100%;">Login</button>
+
+</ion-content>
