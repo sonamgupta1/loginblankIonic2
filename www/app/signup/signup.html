@@ -6,25 +6,19 @@
 
 <ion-content>
 
-    <ion-list>
-
+    <div padding>
         <ion-input floating-label>
             <ion-label>Username</ion-label>
             <input type="text" value="" [(ng-model)]="username">
         </ion-input>
 
-        <!--<ion-input floating-label>-->
-            <!--<ion-label>Email</ion-label>-->
-            <!--<input type="text" value="" [(ng-model)]="email">-->
-        <!--</ion-input>-->
-
         <ion-input floating-label>
             <ion-label>Password</ion-label>
             <input type="password" value="" [(ng-model)]="password">
         </ion-input>
+    </div>
+    <div padding>
 
-    </ion-list>
-
-    <button secondary (click)="signupEmail()" style="width:100%;">Register</button>
-
+        <button secondary block (click)="signupEmail()">Register</button>
+    </div>
 </ion-content>

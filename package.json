@@ -18,7 +18,12 @@
   },
   "name": "ionic2maps",
   "description": "Ionic2Maps: An Ionic project",
-  "cordovaPlugins": [],
+  "cordovaPlugins": [
+    {
+      "locator": "https://github.com/apache/cordova-plugin-whitelist.git",
+      "id": "cordova-plugin-whitelist"
+    }
+  ],
   "cordovaPlatforms": [
     "android"
   ]

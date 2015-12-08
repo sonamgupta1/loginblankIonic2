@@ -5,7 +5,7 @@ import {Page} from 'ionic/ionic';
 })
 export class SigninPage {
 
-    constructor(){
+    constructor() {
 
         //This will hold data from our form
         this.username = null;
@@ -13,21 +13,22 @@ export class SigninPage {
 
     }
 
-    loginEmail(){
+    loginEmail() {
 
         Parse.User.logIn(this.username, this.password, {
-            success: function(user) {
+            success: function (user) {
                 // Do stuff after successful login.
-                console.log("user",user);
-
-                alert("success!");
+                alert("Login successfully!");
             },
-            error: function(user, error) {
+            error: function (user, error) {
                 // The login failed. Check error to see why.
 
                 //alert("Error: " + error.code + " " + error.message);
+                let userData = user;
 
-                alert("Error:" +error.message);
+                alert("Error:" + error.message);
+
+
 
             }
         });

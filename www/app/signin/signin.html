@@ -6,8 +6,8 @@
 
 <ion-content>
 
-    <ion-list>
 
+    <div padding>
         <ion-input floating-label>
             <ion-label>Username</ion-label>
             <input type="text" value="" [(ng-model)]="username">
@@ -17,9 +17,9 @@
             <ion-label>Password</ion-label>
             <input type="password" value="" [(ng-model)]="password">
         </ion-input>
+    </div>
 
-    </ion-list>
-
-    <button secondary (click)="loginEmail()" style="width:100%;">Login</button>
-
+    <div padding>
+        <button secondary block (click)="loginEmail()">Login</button>
+    </div>
 </ion-content>

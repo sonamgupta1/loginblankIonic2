@@ -5,14 +5,17 @@
     </ion-title>
 </ion-navbar>
 
-<ion-content padding class="getting-started">
+<ion-content>
+    <div padding>
+        <button primary block (click)="signUp()">
 
-    <button primary style="width: 100%; padding: 20px;" (click)="signUp()">
-        Sign Up
-    </button>
+            Sign Up
+        </button>
+    </div>
 
-    <button secondary style="width: 100%; padding: 20px;" (click)="signIn()">
-        Sign In
-    </button>
-
+    <div padding>
+        <button secondary block (click)="signIn()">
+            Sign In
+        </button>
+    </div>
 </ion-content>
